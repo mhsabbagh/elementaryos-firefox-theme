@@ -84,39 +84,10 @@
 #fullscreen-exit-button {
     color: #ffffff !important;
 }
-#window-controls {
-  display: none !important;
-}
 
-/* titlebar */
-.titlebar-buttonbox-container {
-  display: flex !important;
-  pointer-events: none;
-}
-.titlebar-buttonbox {
-  flex-direction: row-reverse !important;
-  margin: 0px !important;
-  top: 12px !important; 
-  position: fixed !important;
-  display: flex !important;
-  width: calc(100vw - 6px) !important;
-  height: 25px !important;
-  justify-content: space-between !important;
-}
+
 :root[sizemode="fullscreen"] .titlebar-buttonbox {
   display: none !important; /* fullscreen no window control buttons */
-}
-.titlebar-close,
-.titlebar-max,
-.PanelUI-menu-button,
-#wrapper-new-tab-button,
-.tabs-newtab-button,
-.tabbrowser-tab,
-.tabbrowser-arrowscrollbox {
-  pointer-events: auto !important; /* clickable */
-}
-.titlebar-min {
-  display: none !important;
 }
 
 /* navbar */
@@ -131,7 +102,7 @@
   -moz-box-ordinal-group: 0;
   -moz-appearance: -moz-window-titlebar !important; /* makes rounded corners for main window */
   height: 47px !important;
-  padding: 0px 42px 0px 42px !important;
+  padding: 0px 82px 0px 0px !important;
 }
 
 /* fullscreen fixes for the nav bar */
@@ -271,7 +242,7 @@ toolbar .toolbarbutton-1:active > .toolbarbutton-icon {
 
 /* tabs width */
 .tabbrowser-tab[fadein]:not([pinned]) {
-  max-width: 180px !important;
+  max-width: 210px !important;
 }
 
 .private-browsing-indicator {
@@ -285,8 +256,7 @@ toolbar .toolbarbutton-1:active > .toolbarbutton-icon {
   max-height: var(--tab-min-height) !important;
 }
 .tab-content:not([pinned]) {
-  -moz-box-direction: reverse !important;
-  padding: 0px 0px 0px 9px !important;
+  padding: 0px 9px 0px 10px !important;
 }
 .tabbrowser-tab[pinned] {
   max-height: 30px !important; /* so tabbar border shows */
@@ -300,9 +270,7 @@ toolbar .toolbarbutton-1:active > .toolbarbutton-icon {
   border-right: 1px solid transparent !important;
   border-image: linear-gradient(to bottom, transparent, rgba(0,0,0, 0.1)) 1 !important;
 }
-.tabbrowser-tab[visuallyselected="true"],
-.arrowscrollbox-overflow-start-indicator:not([collapsed]),
-.arrowscrollbox-overflow-end-indicator:not([collapsed]) {
+.tabbrowser-tab[visuallyselected="true"] {
   z-index: 0 !important;
 }
 .tabbrowser-tab[selected="true"] {
@@ -635,4 +603,12 @@ menubar:-moz-lwtheme-brighttext > menu[open="true"] {
 #main-window[privatebrowsingmode="temporary"] .tab-label {
 	color: #FFF !important;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4) !important;
+}
+
+
+
+
+.titlebar-buttonbox-container {
+	float: right !important;
+	margin-top: -5.3em !important;
 }
