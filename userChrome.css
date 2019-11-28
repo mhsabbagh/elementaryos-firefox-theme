@@ -102,7 +102,7 @@
   -moz-box-ordinal-group: 0;
   -moz-appearance: -moz-window-titlebar !important; /* makes rounded corners for main window */
   height: 47px !important;
-  padding: 0px 82px 0px 0px !important;
+  padding: 0px 95px 0px 0px !important;
 }
 
 /* fullscreen fixes for the nav bar */
@@ -610,5 +610,5 @@ menubar:-moz-lwtheme-brighttext > menu[open="true"] {
 
 .titlebar-buttonbox-container {
 	float: right !important;
-	margin-top: -5.3em !important;
+	margin-top: -5.5em !important;
 }
